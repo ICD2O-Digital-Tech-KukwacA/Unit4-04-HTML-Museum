@@ -1,9 +1,41 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Title</title>
+<html lang="en-ca">
+  
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Movie Restrictions"/>
+    <meta name="keywords" content="immaculata, icd2o"/>
+    <meta name="author" content="Kukwac"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Title of the page -->
+    <link rel="apple-touch-icon" sizes="180x190" href="Favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="Favicons/favicon-16x16.png">
+    <link rel="manifest" href="Favicons/site.webmanifest">
+    <title>Movie Restrictions</title>
   </head>
   <body>
-    <p>Paragraph</p>
+    <!-- Form to get the user-info-->
+    <script src="./js/script.js"></script>
+    <form action="#">
+          <h6>Appropriate age to watch movies.</h6>
+          <div class="mdl-textfield mdl-js-textfield">
+            <input type="number" id="user-age" step="any" placeholder="Enter a number">
+          </div>
+            <span class="mdl-textfield__error">Input is not a number!</span>
+            <span class="mdl-textfield__error">Input is not a valid age!</span>
+        </form>
+        <!-- Button to display result -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick= userAge()>
+          Display Result
+        </button>
+        <div id="answers">
+          <div id="result"></div>
+        </div>
   </body>
 </html>
