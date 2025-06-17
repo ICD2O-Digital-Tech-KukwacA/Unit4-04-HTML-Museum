@@ -9,6 +9,7 @@ function userAge() {
     let pgRatedMovies = 10;
     let gRatedMovies = 5;
     let display = "";
+    
     let userGuess = parseInt(document.getElementById("user-age").value);
     if (userGuess >= rRatedMovies) {
         display = "You are old enough to watch R rated movies.";
